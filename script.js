@@ -223,3 +223,42 @@ console.log('%c👋 Salut ! ', 'font-size: 20px; font-weight: bold; color: #6366
 console.log('%cCe portfolio a été codé en HTML/CSS/JS par Flora Lambert', 'font-size: 14px; color: #475569;');
 console.log('%cÀ la recherche d\'une alternance en Product Building No-Code/Low-Code & IA', 'font-size: 12px; color: #94a3b8;');
 console.log('%c📧 floralambert@gmx.com', 'font-size: 12px; color: #6366f1;');
+
+// ===========================
+// MODALS
+// ===========================
+
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+}
+
+// Fermer le modal en cliquant en dehors du contenu
+window.addEventListener('click', (e) => {
+    if (e.target.classList.contains('modal')) {
+        e.target.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Fermer le modal avec la touche Échap
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        const activeModal = document.querySelector('.modal.active');
+        if (activeModal) {
+            activeModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    }
+});

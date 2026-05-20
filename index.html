@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flora Lambert - Product Builder No-Code/Low-Code & IA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Flora Lambert | Product Builder No-Code & IA</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
+
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Flora Lambert</div>
+            <div class="nav-brand">FL</div>
             <ul class="nav-menu">
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#skills">Compétences</a></li>
-                <li><a href="#projects">Projets</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#apropos">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -28,629 +28,330 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- HERO SECTION -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-tag">Disponible en alternance • Janvier 2025</div>
-                <h1 class="hero-title">
-                    Product Builder<br>
-                    <span class="gradient-text">No-Code, Low-Code & IA</span>
-                </h1>
-                <p class="hero-description">
-                    Designer en transition vers le no-code et l'IA. Je crée des solutions digitales en appliquant la même logique : tester, itérer et trouver des solutions !
-                </p>
+        <div class="hero-banner">
+            <div class="hero-geometry-line line-1"></div>
+            <div class="hero-geometry-line line-2"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-portrait">
+                        <img src="assets/portrait_Flora_pro.jpg" alt="Flora Lambert">
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-title">Product Builder</h1>
+                        <p class="hero-subtitle">No-Code + Low-Code & AI Automation Systems</p>
+                        <div class="hero-divider"></div>
+                        <div class="hero-icons">
+                            <div class="hero-icon-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/><path d="M12 8v8m-4-4h8"/></svg>
+                                <span>Automation</span>
+                            </div>
+                            <div class="hero-icon-item">
+                                <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                                <span>Frontend</span>
+                            </div>
+                            <div class="hero-icon-item">
+                                <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                                <span>Backend</span>
+                            </div>
+                            <div class="hero-icon-item">
+                                <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+                                <span>AI</span>
+                            </div>
+                            <div class="hero-icon-item">
+                                <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                                <span>Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-intro">
+            <div class="container">
+                <p class="hero-availability">Disponible immédiatement • 10 mois d'alternance</p>
+                <p class="hero-description">Automatisation de vos process métier & IA</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
                     <a href="#contact" class="btn btn-secondary">Me contacter</a>
                 </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <div class="stat-number">4 j./semaine</div>
-                        <div class="stat-label">En entreprise</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">12 mois</div>
-                        <div class="stat-label">Contrat alternance</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">Bac+4</div>
-                        <div class="stat-label">Titre RNCP niveau 6</div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Qui suis-je</span>
-                <h2>Du design à la tech</h2>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="lead">
-                        Je suis designer, spécialisée en joaillerie, et j'ai décidé de faire évoluer mon métier 
-                        en me formant au no-code et à l'IA.
-                    </p>
-                    <p>
-                        Les passerelles entre ces deux univers sont nombreuses : le designer, tout comme le 
-                        développeur no-code, cherche des solutions, teste, itère jusqu'à trouver la bonne approche. 
-                        Cette double compétence design-tech me permet d'avoir une vision globale des projets, 
-                        de l'idée créative à la solution technique.
-                    </p>
-                    <p>
-                        Formée à la <strong>HEAD Genève</strong> (avec un semestre Erasmus au Politecnico de Milano), 
-                        je suis aujourd'hui en formation intensive en développement low-code/no-code et intelligence 
-                        artificielle avec <strong>Alegría.Academy</strong>. Je cherche une alternance pour contribuer 
-                        à des projets innovants et continuer à apprendre au sein d'une équipe dynamique.
-                    </p>
-                    <div class="about-highlights">
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🎨</span>
-                            <div>
-                                <strong>Sens du design</strong>
-                                <p>4 ans comme designer indépendante • Design thinking • UX • Design durable</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🚀</span>
-                            <div>
-                                <strong>Orientation tech</strong>
-                                <p>Autodidacte passionnée • Formation intensive no-code/low-code & IA</p>
-                            </div>
-                        </div>
-                        <div class="highlight-item">
-                            <span class="highlight-icon">🔥</span>
-                            <div>
-                                <strong>Engagement</strong>
-                                <p>Sapeur-pompier volontaire depuis 2012</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-container">
-                        <img src="flora-lambert.jpg" alt="Flora Lambert" class="profile-image">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Stack technique</span>
-                <h2>Compétences & Outils</h2>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <div class="category-icon">⚡</div>
-                    <h3>No-Code / Low-Code</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Logique Algorithmique</span>
-                        <span class="skill-tag">Weweb</span>
-                        <span class="skill-tag">Xano</span>
-                        <span class="skill-tag">Webflow</span>
-                        <span class="skill-tag">Make</span>
-                        <span class="skill-tag">Make IA</span>
-                        <span class="skill-tag">Airtable</span>
-                        <span class="skill-tag">Tally</span>
-                        <span class="skill-tag">Obsidian</span>
-                        <span class="skill-tag">Notion</span>
-                        <span class="skill-tag">Framer</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="category-icon">🎨</div>
-                    <h3>Design & UX</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">Suite Adobe</span>
-                        <span class="skill-tag">Rhinocéros 3D</span>
-                        <span class="skill-tag">ProCreate</span>
-                        <span class="skill-tag">Design Thinking</span>
-                        <span class="skill-tag">Design Durable</span>
-                        <span class="skill-tag">UX Design</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="category-icon">💻</div>
-                    <h3>Développement</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">Ruby</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">API Integration</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <div class="category-icon">🤝</div>
-                    <h3>Productivité & Collaboration</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Whimsical</span>
-                        <span class="skill-tag">Fallout</span>
-                        <span class="skill-tag">Loom</span>
-                        <span class="skill-tag">Slack</span>
-                        <span class="skill-tag">Notion</span>
-                    </div>
-                </div>
-            </div>
-            <div class="soft-skills">
-                <h3>Soft Skills</h3>
-                <div class="soft-skill-list">
-                    <span class="soft-skill-item">✨ Créative</span>
-                    <span class="soft-skill-item">🤝 Collaborative</span>
-                    <span class="soft-skill-item">📊 Analytique</span>
-                    <span class="soft-skill-item">💪 Persévérante</span>
-                    <span class="soft-skill-item">🚀 Audacieuse</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- SECTION PROJETS -->
+    <section id="projets" class="projects">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Réalisations</span>
-                <h2>Projets Web, No-Code & Automatisation</h2>
+                <h2>Projets Countiko</h2>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card" onclick="openModal('modal1')">
-                    <div class="project-header">
-                        <div class="project-icon">🗄️</div>
-                        <div class="project-tags">
-                            <span class="tag">Airtable</span>
-                            <span class="tag">Automation</span>
+                <!-- Projet 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Capture_d_e_cran_2026-05-13_a__14_00_39.png" alt="Statistiques achats">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Automatisation de la traçabilité alimentaire</h3>
                         </div>
-                    </div>
-                    <h3>Base de données École de Design</h3>
-                    <p>
-                        Création d'une base de données complète pour gérer cours, inscriptions et présences, 
-                        avec automations avancées (emails conditionnels, messages Slack, rapports hebdomadaires).
-                    </p>
-                    <div class="project-tech">
-                        <span>Airtable</span>
-                        <span>Make</span>
-                        <span>Automation</span>
-                        <span>Slack API</span>
-                    </div>
-                    <span class="project-link">
-                        Voir le projet →
-                    </span>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card" onclick="openModal('modal2')">
-                    <div class="project-header">
-                        <div class="project-icon">🏥</div>
-                        <div class="project-tags">
-                            <span class="tag">Figma</span>
-                            <span class="tag">UX Design</span>
+                        <p>Extraction automatique de données depuis bons de livraison (petits producteurs → ERP grossiste). Maintenance et amélioration de scénarios Make — analyse IA, consultation historique BDD, autoremplissage des données manquantes.</p>
+                        <div class="project-impact">
+                            <strong>Impact :</strong> Gain de temps significatif + compensation des lacunes administratives des micro-structures
                         </div>
-                    </div>
-                    <h3>Application de pré-diagnostic pédiatrique</h3>
-                    <p>
-                        Conception d'une MVP d'application de pré-diagnostic médical pour enfants, inspirée de 
-                        mon expérience de sapeur-pompier. Iconographie et maquettes responsive complètes.
-                    </p>
-                    <div class="project-tech">
-                        <span>Figma</span>
-                        <span>UX Design</span>
-                        <span>MVP</span>
-                        <span>Design System</span>
-                    </div>
-                    <span class="project-link">
-                        Voir le projet →
-                    </span>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-card" onclick="openModal('modal3')">
-                    <div class="project-header">
-                        <div class="project-icon">🏃</div>
-                        <div class="project-tags">
-                            <span class="tag">Tally</span>
-                            <span class="tag">Make</span>
+                        <div class="project-tech">
+                            <span>Make</span>
+                            <span>OpenAI</span>
+                            <span>Bubble</span>
+                            <span>Airtable</span>
                         </div>
-                    </div>
-                    <h3>Suivi d'événement sportif</h3>
-                    <p>
-                        Système de suivi en temps réel pour un événement sportif avec formulaires Tally 
-                        et dashboard Google Sheets permettant une gestion fluide des données terrain.
-                    </p>
-                    <div class="project-tech">
-                        <span>Tally</span>
-                        <span>Google Sheets</span>
-                        <span>Make</span>
-                        <span>Gmail</span>
-                    </div>
-                    <span class="project-link">
-                        Voir le projet →
-                    </span>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card" onclick="openModal('modal4')">
-                    <div class="project-header">
-                        <div class="project-icon">💻</div>
                         <div class="project-tags">
-                            <span class="tag">GitHub</span>
+                            <span class="tag">Automatisation</span>
                             <span class="tag">IA</span>
+                            <span class="tag">Backend</span>
                         </div>
                     </div>
-                    <h3>Portfolio codé avec IA</h3>
-                    <p>
-                        Création d'un site portfolio no-code/code avec Claude AI, GitHub et Notepad++. 
-                        Démonstration de ma capacité à allier IA et développement web.
-                    </p>
-                    <div class="project-tech">
-                        <span>GitHub</span>
-                        <span>Claude AI</span>
-                        <span>HTML/CSS/JS</span>
-                        <span>GitHub Pages</span>
-                    </div>
-                    <span class="project-link">
-                        Voir le projet →
-                    </span>
                 </div>
 
-                <!-- Project 5 -->
-                <div class="project-card" onclick="openModal('modal5')">
-                    <div class="project-header">
-                        <div class="project-icon">🎮</div>
+                <!-- Projet 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Capture_d_e_cran_2026-05-18_a__23_16_29.png" alt="Schéma n8n">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Migration Make → n8n : optimisation coûts & fiabilité</h3>
+                        </div>
+                        <p>Refonte de scénarios d'automatisation pour réduire la dépendance à l'IA. Migration de workflows Make vers n8n avec logique low-code (règles métier, normalisation).</p>
+                        <div class="project-impact">
+                            <strong>Impact :</strong> Réduction des appels IA → process plus rapide, moins coûteux, plus fiable
+                        </div>
+                        <div class="project-tech">
+                            <span>n8n</span>
+                            <span>JavaScript</span>
+                            <span>Bubble</span>
+                        </div>
                         <div class="project-tags">
-                            <span class="tag">Ruby</span>
-                            <span class="tag">Algorithme</span>
+                            <span class="tag">Automatisation</span>
+                            <span class="tag">Backend</span>
+                            <span class="tag">Optimisation</span>
                         </div>
                     </div>
-                    <h3>Jeu d'aventure textuel en Ruby</h3>
-                    <p>
-                        Développement d'un jeu d'aventure textuel où le joueur doit survivre dans une forêt mystérieuse 
-                        en gérant ses ressources et en affrontant des créatures.
-                    </p>
-                    <div class="project-tech">
-                        <span>Ruby</span>
-                        <span>Algorithme</span>
-                        <span>Game Design</span>
-                        <span>Logique</span>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/Capture_d_e_cran_2026-05-18_a__23_23_12.png" alt="Workflow complexe">
                     </div>
-                    <span class="project-link">
-                        Voir le projet →
-                    </span>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Assistant conversationnel achat intelligent</h3>
+                        </div>
+                        <p>Outil connecté à plusieurs BDD pour aider les acheteurs (grande distribution, grossistes) dans leurs négociations. Participation à la conception du système de requêtes (benchmark, statistiques achats, marges de manœuvre en temps réel).</p>
+                        <div class="project-impact">
+                            <strong>Impact :</strong> Optimisation des négociations tarifaires + gain de temps énorme sur les comparatifs
+                        </div>
+                        <div class="project-tech">
+                            <span>Make</span>
+                            <span>OpenAI</span>
+                            <span>Bubble</span>
+                            <span>Airtable</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">IA</span>
+                            <span class="tag">Automatisation</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- SECTION COMPÉTENCES -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stack Technique</span>
+                <h2>Mes compétences opérationnelles</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Automation -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"/><path d="M12 8v8m-4-4h8"/></svg>
+                    </div>
+                    <h3>Automation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Make</span>
+                        <span class="skill-tag">n8n</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Webflow</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Bubble</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Xano</span>
+                        <span class="skill-tag">Airtable</span>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/></svg>
+                    </div>
+                    <h3>AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenAI</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                    </div>
+                    <h3>Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">UX Design</span>
+                        <span class="skill-tag">Design Thinking</span>
+                        <span class="skill-tag">Photoshop</span>
+                        <span class="skill-tag">Illustrator</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <div class="soft-skill-list">
+                    <span class="soft-skill-item">Autonomie & collaboration</span>
+                    <span class="soft-skill-item">Résolution de problèmes complexes</span>
+                    <span class="soft-skill-item">Adaptabilité terrain</span>
+                    <span class="soft-skill-item">Gestion multi-projets</span>
+                    <span class="soft-skill-item">Rigueur opérationnelle</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION À PROPOS -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Du design à l'automatisation : résoudre des problèmes à impact</h2>
+                    <p>Formée au design d'expérience utilisateur, UX et Design Thinking (HEAD Genève, Politecnico di Milano), j'ai commencé par la joaillerie avant de pivoter vers l'automatisation et l'IA.</p>
+                    <p><strong>Ce qui me motive : la nouveauté, les défis, tout ce que je ne maîtrise pas encore.</strong> La tech permet aujourd'hui de résoudre à grande échelle des problématiques métier complexes. J'adore ces challenges : écouter, analyser, concevoir la solution qui simplifie vraiment le quotidien des équipes.</p>
+                    <p><strong>Mon profil :</strong> Autonome grâce à mon parcours entrepreneurial, je sais m'entourer et travailler en équipe. Flexible, multitâche, je m'adapte vite aux contextes variés et aux urgences terrain.</p>
+                    <p><strong>Mon approche de l'automatisation :</strong> Ni tout automatiser aveuglément, ni rester dans le manuel inefficace. Le bon équilibre entre humain et digital — juste ce qu'il faut, où il faut.</p>
+                    <p><strong>En parallèle :</strong> Sapeur-pompier volontaire depuis 13 ans. Un engagement qui forge la rigueur, la réactivité et l'esprit d'équipe.</p>
+                    <p><strong>Mon objectif sur 3 ans :</strong> Devenir experte en IA et low-code pour concevoir des systèmes d'automatisation qui ont du sens.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="assets/portrait_Flora_pro.jpg" alt="Flora Lambert" class="profile-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
     <section id="contact" class="contact">
         <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Prenons contact</span>
+                <h2>Travaillons ensemble</h2>
+            </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <span class="section-tag">Discutons</span>
-                    <h2>Intéressé par mon profil ?</h2>
-                    <p class="lead">
-                        Je recherche une alternance à partir de janvier 2025 en région parisienne. 
-                        Si vous avez un projet ou une opportunité, contactez-moi !
-                    </p>
                     <div class="contact-details">
                         <a href="mailto:floralambert@gmx.com" class="contact-item">
-                            <span class="contact-icon">📧</span>
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
                             <div>
                                 <strong>Email</strong>
                                 <p>floralambert@gmx.com</p>
                             </div>
                         </a>
-                        <a href="tel:+33670003273" class="contact-item">
-                            <span class="contact-icon">📱</span>
-                            <div>
-                                <strong>Téléphone</strong>
-                                <p>+33 6 70 00 32 73</p>
+                        <a href="https://linkedin.com/in/floralambert" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                             </div>
-                        </a>
-                        <a href="https://www.linkedin.com/in/flora-lambert-code" target="_blank" class="contact-item">
-                            <span class="contact-icon">💼</span>
                             <div>
                                 <strong>LinkedIn</strong>
-                                <p>Flora Lambert</p>
+                                <p>linkedin.com/in/floralambert</p>
                             </div>
                         </a>
                         <div class="contact-item">
-                            <span class="contact-icon">📍</span>
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
                             <div>
                                 <strong>Localisation</strong>
-                                <p>Boulogne-Billancourt, 92</p>
+                                <p>Paris, Île-de-France</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contact-cta">
-                    <div class="cta-card">
-                        <h3>💼 Type de contrat</h3>
-                        <p>Alternance de 12 mois</p>
-                        <p class="cta-detail">4 jours/semaine en entreprise<br>1 jour de formation</p>
+                    <div class="cta-card cta-cream">
+                        <h3>Alternance</h3>
+                        <p>10 mois</p>
+                        <p class="cta-detail">Juin 2026 - Mars 2027</p>
                     </div>
-                    <div class="cta-card">
-                        <h3>📅 Disponibilité</h3>
-                        <p>Janvier 2025</p>
-                        <p class="cta-detail">Formation Alegria.Academy<br>Titre RNCP niveau 6</p>
+                    <div class="cta-card cta-cream">
+                        <h3>Formation</h3>
+                        <p>Product Builder RNCP Niveau 6</p>
+                        <p class="cta-detail">Alegria Academy</p>
                     </div>
-                    <div class="cta-card">
-                        <h3>🎯 Profil recherché</h3>
-                        <p>Product Builder / No-Code Dev</p>
-                        <p class="cta-detail">Startup, Scale-up, ESN<br>Département Innovation</p>
-                    </div>
-                    <div class="cta-card cta-cv" onclick="openModal('modalCV')">
-                        <h3>📄 Mon CV</h3>
-                        <p>Consulter mon curriculum vitae</p>
-                        <button class="btn-cv">Voir mon CV →</button>
+                    <div class="cta-card cta-cv">
+                        <h3>Consultez mon CV</h3>
+                        <a href="assets/CV_Flora_Lambert.pdf" download class="btn btn-primary">Télécharger le CV</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-left">
-                    <p>&copy; 2024 Flora Lambert. Fait avec ❤️ en HTML/CSS/JS</p>
+                    <p>&copy; 2026 Flora Lambert. Tous droits réservés.</p>
                 </div>
                 <div class="footer-right">
-                    <a href="https://www.linkedin.com/in/flora-lambert-code" target="_blank">LinkedIn</a>
-                    <a href="https://flora-lambert.framer.website" target="_blank">Portfolio Framer</a>
-                    <a href="mailto:floralambert@gmx.com">Contact</a>
+                    <a href="https://linkedin.com/in/floralambert" target="_blank">LinkedIn</a>
+                    <a href="mailto:floralambert@gmx.com">Email</a>
                 </div>
             </div>
         </div>
     </footer>
-
-    <!-- CV Modal -->
-    <div id="modalCV" class="modal">
-        <div class="modal-content modal-cv-content">
-            <span class="modal-close" onclick="closeModal('modalCV')">&times;</span>
-            <h2>📄 Curriculum Vitae - Flora Lambert</h2>
-            <div class="modal-cv-body">
-                <div class="cv-preview">
-                    <img src="cv-image.png" alt="CV Flora Lambert" class="cv-image">
-                </div>
-                <div class="cv-actions">
-                    <a href="cv-flora-lambert.pdf" download="CV-Flora-Lambert.pdf" class="btn-download">
-                        ⬇️ Télécharger le CV (PDF)
-                    </a>
-                    <p class="cv-note">Format PDF • Dernière mise à jour : Novembre 2024</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Project Modals -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal1')">&times;</span>
-            <h2>🗄️ Base de données École de Design</h2>
-            <div class="modal-body">
-                <div class="modal-description">
-                    <h3>À propos du projet</h3>
-                    <p>
-                        Création d'une base de données complète sur Airtable pour une école de design, 
-                        permettant de gérer l'ensemble des cours, inscriptions et présences de manière centralisée.
-                    </p>
-                    <h3>Fonctionnalités principales</h3>
-                    <ul>
-                        <li><strong>Gestion des cours</strong> : Planning complet avec informations détaillées</li>
-                        <li><strong>Inscriptions</strong> : Suivi en temps réel des étudiants inscrits</li>
-                        <li><strong>Présences</strong> : Système de validation des présences</li>
-                        <li><strong>Automations avancées</strong> :
-                            <ul>
-                                <li>Envoi d'emails conditionnels aux étudiants</li>
-                                <li>Notifications automatiques à heures précises</li>
-                                <li>Messages dans un canal Slack dédié</li>
-                                <li>Rapports hebdomadaires automatiques</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <h3>Technologies utilisées</h3>
-                    <div class="modal-tech">
-                        <span class="tech-badge">Airtable</span>
-                        <span class="tech-badge">Make</span>
-                        <span class="tech-badge">Slack API</span>
-                        <span class="tech-badge">Email Automation</span>
-                    </div>
-                </div>
-                <div class="modal-media">
-                    <div class="video-container">
-                        <iframe src="https://www.loom.com/embed/77f7453900354a0883ee01bc88e69302" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width: 100%; height: 100%; min-height: 400px;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal2')">&times;</span>
-            <h2>🏥 Application de pré-diagnostic pédiatrique</h2>
-            <div class="modal-body">
-                <div class="modal-description">
-                    <h3>À propos du projet</h3>
-                    <p>
-                        Conception d'une application mobile de pré-diagnostic médical destinée aux enfants, 
-                        inspirée directement de mon expérience terrain en tant que sapeur-pompier.
-                    </p>
-                    <h3>Démarche UX</h3>
-                    <ul>
-                        <li><strong>Recherche utilisateur</strong> : Basée sur mes interventions réelles auprès d'enfants</li>
-                        <li><strong>Création d'une MVP</strong> : Focus sur les fonctionnalités essentielles</li>
-                        <li><strong>Iconographie adaptée</strong> : Visuel rassurant et compréhensible pour les enfants</li>
-                        <li><strong>Design responsive</strong> : Adaptation mobile et tablette</li>
-                        <li><strong>Parcours utilisateur simplifié</strong> : Interface intuitive même en situation de stress</li>
-                    </ul>
-                    <h3>Technologies utilisées</h3>
-                    <div class="modal-tech">
-                        <span class="tech-badge">Figma</span>
-                        <span class="tech-badge">UX Design</span>
-                        <span class="tech-badge">Design System</span>
-                        <span class="tech-badge">Prototypage</span>
-                    </div>
-                </div>
-                <div class="modal-media">
-                    <div class="video-container">
-                        <iframe src="https://www.loom.com/embed/37b51d0341044654a0a9e9713a3b504f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="width: 100%; height: 100%; min-height: 400px;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal3" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal3')">&times;</span>
-            <h2>🏃 Suivi d'événement sportif</h2>
-            <div class="modal-body">
-                <div class="modal-description">
-                    <h3>À propos du projet</h3>
-                    <p>
-                        Système de suivi en temps réel pour un événement sportif (randonnée), permettant une gestion 
-                        fluide des données terrain avec synchronisation automatique.
-                    </p>
-                    <h3>Solution développée</h3>
-                    <ul>
-                        <li><strong>Formulaires Tally</strong> : Saisie rapide des données sur mobile</li>
-                        <li><strong>Dashboard Google Sheets</strong> : Visualisation en temps réel</li>
-                        <li><strong>Workflow automatisé Make</strong> : Synchronisation instantanée</li>
-                        <li><strong>Notifications Gmail</strong> : Alertes automatiques</li>
-                        <li><strong>Interface terrain</strong> : Optimisée pour une utilisation rapide</li>
-                    </ul>
-                    <h3>Technologies utilisées</h3>
-                    <div class="modal-tech">
-                        <span class="tech-badge">Tally Forms</span>
-                        <span class="tech-badge">Google Sheets</span>
-                        <span class="tech-badge">Make</span>
-                        <span class="tech-badge">Gmail</span>
-                    </div>
-                </div>
-                <div class="modal-media">
-                    <div class="project-images-grid">
-                        <img src="projet3-img4.png" alt="Workflow Make">
-                        <img src="projet3-img1.png" alt="Formulaire Tally">
-                        <img src="projet3-img3.png" alt="Google Sheets Dashboard">
-                        <img src="projet3-img2.png" alt="Statistiques">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal4" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal4')">&times;</span>
-            <h2>💻 Portfolio codé avec IA</h2>
-            <div class="modal-body">
-                <div class="modal-description">
-                    <h3>À propos du projet</h3>
-                    <p>
-                        Création de ce portfolio en combinant développement web classique (HTML/CSS/JS) 
-                        et intelligence artificielle (Claude AI), démonstrant ma capacité à utiliser les 
-                        outils d'IA pour accélérer le développement.
-                    </p>
-                    <h3>Processus de développement</h3>
-                    <ul>
-                        <li><strong>Collaboration avec Claude AI</strong> : Co-création du code</li>
-                        <li><strong>GitHub</strong> : Versioning et hébergement via GitHub Pages</li>
-                        <li><strong>Notepad++</strong> : Édition et personnalisation du code</li>
-                        <li><strong>Design responsive</strong> : Adaptation à tous les écrans</li>
-                        <li><strong>Optimisation SEO</strong> : Structure sémantique du HTML</li>
-                    </ul>
-                    <h3>Technologies utilisées</h3>
-                    <div class="modal-tech">
-                        <span class="tech-badge">HTML5</span>
-                        <span class="tech-badge">CSS3</span>
-                        <span class="tech-badge">JavaScript</span>
-                        <span class="tech-badge">GitHub Pages</span>
-                        <span class="tech-badge">Claude AI</span>
-                    </div>
-                    <h3>Liens</h3>
-                    <a href="https://github.com/floralambert-tech/floralambert-tech.github.io" target="_blank" class="modal-link">
-                        Voir le code sur GitHub →
-                    </a>
-                </div>
-                <div class="modal-media">
-                    <div class="project-images-grid">
-                        <img src="projet4-img3.png" alt="Section Contact">
-                        <img src="projet4-img2.png" alt="Code CSS GitHub">
-                        <img src="projet4-img1.png" alt="Code JavaScript GitHub">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="modal5" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('modal5')">&times;</span>
-            <h2>🎮 Jeu d'aventure textuel en Ruby</h2>
-            <div class="modal-body">
-                <div class="modal-description">
-                    <h3>À propos du projet</h3>
-                    <p>
-                        Développement d'un jeu d'aventure textuel en Ruby où le joueur incarne un aventurier 
-                        dans une forêt mystérieuse. L'objectif est de sortir de la forêt en vie en gérant 
-                        ses ressources et en prenant les bonnes décisions.
-                    </p>
-                    <h3>Mécaniques de jeu</h3>
-                    <ul>
-                        <li><strong>Gestion des ressources</strong> :
-                            <ul>
-                                <li>Points de vie (10 au départ)</li>
-                                <li>Nourriture (5 lots au départ)</li>
-                                <li>Arme (à trouver en chemin)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Actions disponibles</strong> :
-                            <ul>
-                                <li>Avancer dans la forêt</li>
-                                <li>Chercher de la nourriture</li>
-                                <li>Se reposer (récupère 2 PV, coûte 1 nourriture)</li>
-                            </ul>
-                        </li>
-                        <li><strong>Événements aléatoires</strong> :
-                            <ul>
-                                <li>50% de chance de rencontrer un monstre en avançant</li>
-                                <li>25% de chance de trouver une arme</li>
-                            </ul>
-                        </li>
-                        <li><strong>Boss final</strong> : Pierre/Feuille/Ciseaux à la sortie (position 10)</li>
-                        <li><strong>Conditions de défaite</strong> : PV à 0 ou mort de faim</li>
-                    </ul>
-                    <h3>Compétences développées</h3>
-                    <div class="modal-tech">
-                        <span class="tech-badge">Ruby</span>
-                        <span class="tech-badge">Logique Algorithmique</span>
-                        <span class="tech-badge">POO</span>
-                        <span class="tech-badge">Game Design</span>
-                        <span class="tech-badge">Méthode Merise</span>
-                    </div>
-                </div>
-                <div class="modal-media">
-                    <div class="project-images-grid">
-                        <img src="projet5-img1.png" alt="Code Ruby - Classe Jeu">
-                        <img src="projet5-img2.png" alt="Code Ruby - Boss Final">
-                        <img src="projet5-img3.png" alt="Code Ruby - Combats">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>

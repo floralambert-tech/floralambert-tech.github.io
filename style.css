@@ -260,7 +260,6 @@ strong {
 /* ===========================
    HERO / LINKEDIN BANNER STYLE
    =========================== */
-
 .hero {
     padding: 7rem 0 4rem;
     background: var(--background);
@@ -324,19 +323,19 @@ strong {
     max-width: 1100px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 260px 1fr;
-    gap: var(--spacing-xl);
+    grid-template-columns: 300px 1fr;
+    gap: var(--spacing-2xl);
     align-items: center;
     text-align: left;
 }
 
 .hero-portrait {
-    width: 220px;
-    height: 220px;
-    border-radius: 2rem;
+    width: 280px;
+    height: 280px;
+    border-radius: 1.5rem;
     overflow: hidden;
-    border: 6px solid white;
-    box-shadow: var(--shadow-lg);
+    border: 8px solid white;
+    box-shadow: var(--shadow-xl);
     background: white;
 }
 
@@ -359,7 +358,7 @@ strong {
 
 .hero-title {
     font-family: var(--font-serif);
-    font-size: clamp(2.8rem, 6vw, 5rem);
+    font-size: clamp(3.2rem, 6vw, 5.5rem);
     line-height: 0.95;
     color: var(--primary);
     margin-bottom: var(--spacing-sm);
@@ -367,47 +366,60 @@ strong {
 }
 
 .hero-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-secondary);
     text-transform: uppercase;
     letter-spacing: 0.22em;
     font-weight: 700;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
 }
 
 .hero-divider {
-    width: 180px;
+    width: 200px;
     height: 1px;
     background: var(--primary);
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
 }
 
 .hero-icons {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-lg);
+    gap: var(--spacing-xl);
     align-items: center;
 }
 
 .hero-icon-item {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 0.5rem;
     align-items: center;
     color: var(--primary);
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-weight: 700;
+    width: 70px;
 }
 
 .hero-icon-item svg {
-    width: 30px;
-    height: 30px;
-    stroke: var(--primary);
-    stroke-width: 1.5;
-    fill: none;
+    display: none;
 }
+
+.hero-icon-item::before {
+    content: '';
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-icon-item:nth-child(1)::before { background-image: url('automation.png'); }
+.hero-icon-item:nth-child(2)::before { background-image: url('frontend.png'); }
+.hero-icon-item:nth-child(3)::before { background-image: url('backend.png'); }
+.hero-icon-item:nth-child(4)::before { background-image: url('ai.png'); }
+.hero-icon-item:nth-child(5)::before { background-image: url('design.png'); }
 
 .hero-intro {
     padding: var(--spacing-xl) 0 0;

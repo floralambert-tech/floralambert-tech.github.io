@@ -85,91 +85,441 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Réalisations</span>
-                <h2>Projets Countiko</h2>
+                <h2>Mes Projets</h2>
             </div>
-            <div class="projects-grid">
-                <!-- Projet 1 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/Capture_d_e_cran_2026-05-13_a__14_00_39.png" alt="Statistiques achats">
+
+            <!-- PROJETS COUNTIKO (GRANDS) -->
+            <div class="projects-section">
+                <h3 class="projects-subsection-title">Projets Countiko</h3>
+                <div class="projects-grid projects-grid-large">
+                    <!-- Projet 1: Traçabilité -->
+                    <div class="project-card project-card-large" data-project="countiko-1">
+                        <div class="project-image">
+                            <img src="assets/Capture_d_e_cran_2026-05-13_a__14_00_39.png" alt="Automatisation traçabilité">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Automatisation de la traçabilité alimentaire</h3>
+                            <p class="project-description-short">Extraction automatique de données depuis bons de livraison pour ERP grossiste.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">Automatisation</span>
+                                    <span class="tag-competence">IA</span>
+                                    <span class="tag-competence">Backend</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">Make</span>
+                                    <span class="tag-stack">OpenAI</span>
+                                    <span class="tag-stack">Bubble</span>
+                                    <span class="tag-stack">Airtable</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Automatisation de la traçabilité alimentaire</h3>
+
+                    <!-- Projet 2: Migration n8n -->
+                    <div class="project-card project-card-large" data-project="countiko-2">
+                        <div class="project-image">
+                            <img src="assets/Capture_d_e_cran_2026-05-18_a__23_16_29.png" alt="Migration n8n">
                         </div>
-                        <p>Extraction automatique de données depuis bons de livraison (petits producteurs → ERP grossiste). Maintenance et amélioration de scénarios Make — analyse IA, consultation historique BDD, autoremplissage des données manquantes.</p>
-                        <div class="project-impact">
-                            <strong>Impact :</strong> Gain de temps significatif + compensation des lacunes administratives des micro-structures
+                        <div class="project-content">
+                            <h3 class="project-title">Migration Make → n8n : optimisation coûts</h3>
+                            <p class="project-description-short">Refonte d'automatisations pour réduire dépendance IA et optimiser les coûts.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">Automatisation</span>
+                                    <span class="tag-competence">Backend</span>
+                                    <span class="tag-competence">Optimisation</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">n8n</span>
+                                    <span class="tag-stack">JavaScript</span>
+                                    <span class="tag-stack">Bubble</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-tech">
-                            <span>Make</span>
-                            <span>OpenAI</span>
-                            <span>Bubble</span>
-                            <span>Airtable</span>
+                    </div>
+
+                    <!-- Projet 3: Assistant achat -->
+                    <div class="project-card project-card-large" data-project="countiko-3">
+                        <div class="project-image">
+                            <img src="assets/Capture_d_e_cran_2026-05-18_a__23_23_12.png" alt="Assistant achat">
                         </div>
-                        <div class="project-tags">
-                            <span class="tag">Automatisation</span>
-                            <span class="tag">IA</span>
-                            <span class="tag">Backend</span>
+                        <div class="project-content">
+                            <h3 class="project-title">Assistant conversationnel achat intelligent</h3>
+                            <p class="project-description-short">Outil connecté multi-BDD pour optimiser les négociations tarifaires des acheteurs.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">IA</span>
+                                    <span class="tag-competence">Automatisation</span>
+                                    <span class="tag-competence">Frontend</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">Make</span>
+                                    <span class="tag-stack">OpenAI</span>
+                                    <span class="tag-stack">Bubble</span>
+                                    <span class="tag-stack">Airtable</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Projet 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/Capture_d_e_cran_2026-05-18_a__23_16_29.png" alt="Schéma n8n">
+            <!-- PROJETS ANCIENS (PETITS) -->
+            <div class="projects-section">
+                <h3 class="projects-subsection-title">Autres Réalisations</h3>
+                <div class="projects-grid projects-grid-small">
+                    <!-- Projet 4: MedKids -->
+                    <div class="project-card project-card-small" data-project="medkids">
+                        <div class="project-image">
+                            <img src="assets/medkids_3.png" alt="MedKids">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MedKids - Pré-diagnostic médical</h3>
+                            <p class="project-description-short">App mobile pour que les parents expriment la douleur de leur enfant.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">UX</span>
+                                    <span class="tag-competence">Design</span>
+                                    <span class="tag-competence">IA</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">Figma</span>
+                                    <span class="tag-stack">WeWeb</span>
+                                    <span class="tag-stack">Xano</span>
+                                    <span class="tag-stack">n8n</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Migration Make → n8n : optimisation coûts & fiabilité</h3>
-                        </div>
-                        <p>Refonte de scénarios d'automatisation pour réduire la dépendance à l'IA. Migration de workflows Make vers n8n avec logique low-code (règles métier, normalisation).</p>
-                        <div class="project-impact">
-                            <strong>Impact :</strong> Réduction des appels IA → process plus rapide, moins coûteux, plus fiable
-                        </div>
-                        <div class="project-tech">
-                            <span>n8n</span>
-                            <span>JavaScript</span>
-                            <span>Bubble</span>
-                        </div>
-                        <div class="project-tags">
-                            <span class="tag">Automatisation</span>
-                            <span class="tag">Backend</span>
-                            <span class="tag">Optimisation</span>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Projet 3 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="assets/Capture_d_e_cran_2026-05-18_a__23_23_12.png" alt="Workflow complexe">
+                    <!-- Projet 5: Événement sportif -->
+                    <div class="project-card project-card-small" data-project="event-sportif">
+                        <div class="project-image">
+                            <img src="assets/event_sportif.png" alt="Événement sportif">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Suivi événement sportif</h3>
+                            <p class="project-description-short">App de suivi en temps réel pour nettoyage et balisage de 70km de parcours.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">Automatisation</span>
+                                    <span class="tag-competence">Collaboration</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">Tally</span>
+                                    <span class="tag-stack">Make</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-content">
-                        <div class="project-header">
-                            <h3>Assistant conversationnel achat intelligent</h3>
+
+                    <!-- Projet 6: Portfolio -->
+                    <div class="project-card project-card-small" data-project="portfolio">
+                        <div class="project-image">
+                            <img src="assets/portfolio.png" alt="Portfolio">
                         </div>
-                        <p>Outil connecté à plusieurs BDD pour aider les acheteurs (grande distribution, grossistes) dans leurs négociations. Participation à la conception du système de requêtes (benchmark, statistiques achats, marges de manœuvre en temps réel).</p>
-                        <div class="project-impact">
-                            <strong>Impact :</strong> Optimisation des négociations tarifaires + gain de temps énorme sur les comparatifs
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio codé avec IA</h3>
+                            <p class="project-description-short">Exploration du coding et prompt engineering sans formation préalable.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">Prompt Engineering</span>
+                                    <span class="tag-competence">Codage</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">GitHub</span>
+                                    <span class="tag-stack">Claude</span>
+                                    <span class="tag-stack">Photoshop</span>
+                                    <span class="tag-stack">Illustrator</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="project-tech">
-                            <span>Make</span>
-                            <span>OpenAI</span>
-                            <span>Bubble</span>
-                            <span>Airtable</span>
+                    </div>
+
+                    <!-- Projet 7: Jeu Ruby -->
+                    <div class="project-card project-card-small" data-project="jeu-ruby">
+                        <div class="project-image">
+                            <img src="assets/portfolio.png" alt="Jeu Ruby">
                         </div>
-                        <div class="project-tags">
-                            <span class="tag">IA</span>
-                            <span class="tag">Automatisation</span>
-                            <span class="tag">Frontend</span>
+                        <div class="project-content">
+                            <h3 class="project-title">Jeu d'aventure en Ruby</h3>
+                            <p class="project-description-short">Jeu textuel pour apprendre les bases de la programmation Ruby.</p>
+                            <div class="project-tags-wrapper">
+                                <div class="project-tags-competences">
+                                    <span class="tag-competence">Codage</span>
+                                </div>
+                                <div class="project-tags-stack">
+                                    <span class="tag-stack">Ruby</span>
+                                    <span class="tag-stack">Replit</span>
+                                    <span class="tag-stack">Claude</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- MODALS -->
+    <!-- Modal Countiko 1 -->
+    <div id="modal-countiko-1" class="modal">
+        <div class="modal-overlay" onclick="closeModal('countiko-1')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('countiko-1')">✕</button>
+            <div class="modal-image">
+                <img src="assets/Capture_d_e_cran_2026-05-13_a__14_00_39.png" alt="Automatisation traçabilité">
+            </div>
+            <div class="modal-body">
+                <h2>Automatisation de la traçabilité alimentaire</h2>
+                <p class="modal-description">
+                    Extraction automatique de données depuis bons de livraison (petits producteurs → ERP grossiste). 
+                    Maintenance et amélioration continue de scénarios Make — analyse IA, consultation historique BDD, 
+                    autoremplissage des données manquantes.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Gain de temps significatif + compensation des lacunes administratives des micro-structures
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">Automatisation</span>
+                        <span class="tag-competence">IA</span>
+                        <span class="tag-competence">Backend</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">Make</span>
+                        <span class="tag-stack">OpenAI</span>
+                        <span class="tag-stack">Bubble</span>
+                        <span class="tag-stack">Airtable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Countiko 2 -->
+    <div id="modal-countiko-2" class="modal">
+        <div class="modal-overlay" onclick="closeModal('countiko-2')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('countiko-2')">✕</button>
+            <div class="modal-image">
+                <img src="assets/Capture_d_e_cran_2026-05-18_a__23_16_29.png" alt="Migration n8n">
+            </div>
+            <div class="modal-body">
+                <h2>Migration Make → n8n : optimisation coûts & fiabilité</h2>
+                <p class="modal-description">
+                    Refonte de scénarios d'automatisation pour réduire la dépendance à l'IA. Migration progressive 
+                    de workflows Make vers n8n avec logique low-code : règles métier, normalisation de données, 
+                    orchestration intelligent des processus.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Réduction des appels IA → process plus rapide, moins coûteux, plus fiable et maintenable
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">Automatisation</span>
+                        <span class="tag-competence">Backend</span>
+                        <span class="tag-competence">Optimisation</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">n8n</span>
+                        <span class="tag-stack">JavaScript</span>
+                        <span class="tag-stack">Bubble</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Countiko 3 -->
+    <div id="modal-countiko-3" class="modal">
+        <div class="modal-overlay" onclick="closeModal('countiko-3')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('countiko-3')">✕</button>
+            <div class="modal-image">
+                <img src="assets/Capture_d_e_cran_2026-05-18_a__23_23_12.png" alt="Assistant achat">
+            </div>
+            <div class="modal-body">
+                <h2>Assistant conversationnel achat intelligent</h2>
+                <p class="modal-description">
+                    Outil connecté à plusieurs BDD pour aider les acheteurs (grande distribution, grossistes) dans leurs négociations. 
+                    Participation à la conception du système de requêtes : benchmark tarifaire, statistiques achats en temps réel, 
+                    marges de manœuvre calculées, suggestions intelligentes.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Optimisation des négociations tarifaires + gain de temps énorme sur les comparatifs marché
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">IA</span>
+                        <span class="tag-competence">Automatisation</span>
+                        <span class="tag-competence">Frontend</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">Make</span>
+                        <span class="tag-stack">OpenAI</span>
+                        <span class="tag-stack">Bubble</span>
+                        <span class="tag-stack">Airtable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal MedKids -->
+    <div id="modal-medkids" class="modal">
+        <div class="modal-overlay" onclick="closeModal('medkids')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('medkids')">✕</button>
+            <div class="modal-image">
+                <img src="assets/medkids_1.png" alt="MedKids">
+            </div>
+            <div class="modal-body">
+                <h2>MedKids - Application de pré-diagnostic médical</h2>
+                <p class="modal-description">
+                    Application mobile/responsive d'évaluation de la douleur pour enfants. Face à un constat : les enfants sont peu 
+                    pris en compte dans les urgences, et les parents n'ont pas d'outils pour expliquer objectivement la souffrance 
+                    de leur enfant aux professionnels de santé. MedKids guide le parent et l'enfant dans un parcours interactif structuré, 
+                    avec une mascotte sympathique qui accompagne tout le processus.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Meilleure communication parent-médecin • Évaluation objective de la douleur • Réduction des malentendus
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">UX</span>
+                        <span class="tag-competence">Design</span>
+                        <span class="tag-competence">IA</span>
+                        <span class="tag-competence">Design Thinking</span>
+                        <span class="tag-competence">Collaboration</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">Figma</span>
+                        <span class="tag-stack">WeWeb</span>
+                        <span class="tag-stack">Xano</span>
+                        <span class="tag-stack">n8n</span>
+                        <span class="tag-stack">Freepik</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Événement Sportif -->
+    <div id="modal-event-sportif" class="modal">
+        <div class="modal-overlay" onclick="closeModal('event-sportif')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('event-sportif')">✕</button>
+            <div class="modal-image">
+                <img src="assets/event_sportif.png" alt="Événement sportif">
+            </div>
+            <div class="modal-body">
+                <h2>Suivi événement sportif - Coordination bénévoles</h2>
+                <p class="modal-description">
+                    Organisation d'une course/randonnée associative (VTT et pédestre) avec ~70 km de chemins à nettoyer et baliser. 
+                    Défi : coordonner une équipe de bénévoles dispersés sans source de vérité unique. Solution : app de suivi en temps réel 
+                    avec automatisation pour relancer les équipes, vérifier l'avancement par tronçon, et s'adapter sur le terrain.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Visibilité complète du nettoyage • Coordination facilitée • Réduction des déplacements inutiles
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">Automatisation</span>
+                        <span class="tag-competence">Collaboration</span>
+                        <span class="tag-competence">Gestion de projet</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">Tally</span>
+                        <span class="tag-stack">Make</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Portfolio -->
+    <div id="modal-portfolio" class="modal">
+        <div class="modal-overlay" onclick="closeModal('portfolio')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('portfolio')">✕</button>
+            <div class="modal-image">
+                <img src="assets/portfolio.png" alt="Portfolio">
+            </div>
+            <div class="modal-body">
+                <h2>Portfolio codé avec IA</h2>
+                <p class="modal-description">
+                    Envie de coder sans avoir suivi les cours, de découvrir GitHub et d'explorer le prompt engineering à un bon niveau. 
+                    Au lieu de rester sur Canva ou Weweb, j'ai choisi d'essayer le coding, d'utiliser Claude pour du prompt engineering 
+                    avancé, et de découvrir l'écosystème GitHub. Résultat : ce portfolio, construit pas à pas avec itérations et apprentissage continu.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Apprentissage autonome • Découverte du workflow Git • Maîtrise du prompt engineering
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">Prompt Engineering</span>
+                        <span class="tag-competence">Codage</span>
+                        <span class="tag-competence">Autonomie</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">GitHub</span>
+                        <span class="tag-stack">Claude</span>
+                        <span class="tag-stack">Photoshop</span>
+                        <span class="tag-stack">Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Jeu Ruby -->
+    <div id="modal-jeu-ruby" class="modal">
+        <div class="modal-overlay" onclick="closeModal('jeu-ruby')"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('jeu-ruby')">✕</button>
+            <div class="modal-image">
+                <img src="assets/portfolio.png" alt="Jeu Ruby">
+            </div>
+            <div class="modal-body">
+                <h2>Jeu d'aventure textuel en Ruby</h2>
+                <p class="modal-description">
+                    Jeu textuel d'aventure en forêt pour apprendre les bases de Ruby. Interaction simple : touche 1 pour avancer, 
+                    2 pour reculer, flèches du clavier pour se déplacer. Chaque action entraîne une réaction textuelle et des choix. 
+                    L'enjeu : maîtriser les fondamentaux du langage Ruby et du codage en général à travers un projet ludique et tangible.
+                </p>
+                <div class="modal-impact">
+                    <strong>Impact :</strong> Maîtrise des bases de Ruby • Compréhension des boucles et conditions • Projet fonctionnel
+                </div>
+                <div class="modal-tags">
+                    <div class="modal-tags-group">
+                        <h4>Compétences</h4>
+                        <span class="tag-competence">Codage</span>
+                        <span class="tag-competence">Programmation</span>
+                    </div>
+                    <div class="modal-tags-group">
+                        <h4>Stack</h4>
+                        <span class="tag-stack">Ruby</span>
+                        <span class="tag-stack">Replit</span>
+                        <span class="tag-stack">Claude</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- SECTION COMPÉTENCES -->
     <section id="competences" class="skills">
@@ -298,13 +648,13 @@
                                 <p>floralambert@gmx.com</p>
                             </div>
                         </a>
-                        <a href="https://linkedin.com/in/floralambert" target="_blank" class="contact-item">
+                        <a href="https://linkedin.com/in/flora-lambert-code" target="_blank" class="contact-item">
                             <div class="contact-icon">
                                 <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
                             </div>
                             <div>
                                 <strong>LinkedIn</strong>
-                                <p>linkedin.com/in/floralambert</p>
+                                <p>linkedin.com/in/flora-lambert-code</p>
                             </div>
                         </a>
                         <div class="contact-item">
@@ -313,7 +663,7 @@
                             </div>
                             <div>
                                 <strong>Localisation</strong>
-                                <p>Paris, Île-de-France</p>
+                                <p>Boulogne-Billancourt, 92</p>
                             </div>
                         </div>
                     </div>
@@ -346,7 +696,7 @@
                     <p>&copy; 2026 Flora Lambert. Tous droits réservés.</p>
                 </div>
                 <div class="footer-right">
-                    <a href="https://linkedin.com/in/floralambert" target="_blank">LinkedIn</a>
+                    <a href="https://linkedin.com/in/flora-lambert-code" target="_blank">LinkedIn</a>
                     <a href="mailto:floralambert@gmx.com">Email</a>
                 </div>
             </div>

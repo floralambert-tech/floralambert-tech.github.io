@@ -397,6 +397,12 @@ strong {
     display: none;
 }
 
+.hero-icon-img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
 .hero-icon-item::before {
     content: '';
     display: block;
@@ -451,8 +457,8 @@ strong {
 
 .projects-grid-compact {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
 }
 
 /* CARTE COMPACTE */
@@ -460,14 +466,14 @@ strong {
     background: white;
     border: 1px solid var(--border);
     border-radius: 0.75rem;
-    padding: var(--spacing-md);
+    padding: var(--spacing-lg);
     transition: var(--transition);
     cursor: pointer;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-sm);
-    min-height: 140px;
+    gap: var(--spacing-md);
+    min-height: 160px;
 }
 
 .project-card-compact:hover {
@@ -478,13 +484,13 @@ strong {
 
 .project-badge {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 6px;
+    right: 6px;
     background: var(--primary);
     color: white;
-    font-size: 0.6rem;
+    font-size: 0.55rem;
     font-weight: 600;
-    padding: 0.3rem 0.6rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 0.3rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -586,8 +592,8 @@ strong {
     z-index: 2001;
     background: white;
     border-radius: 1.5rem;
-    max-width: 600px;
-    max-height: 90vh;
+    max-width: 750px;
+    max-height: 95vh;
     overflow-y: auto;
     margin: auto;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
@@ -706,6 +712,24 @@ strong {
     width: fit-content;
 }
 
+.cv-container {
+    margin: var(--spacing-lg) 0;
+    background: #f5f5f5;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.cv-container iframe {
+    display: block;
+    border: none;
+}
+
+.modal-cv-actions {
+    text-align: center;
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border);
+}
+
 /* ===========================
    SECTION COMPÉTENCES
    =========================== */
@@ -745,6 +769,12 @@ strong {
     justify-content: center;
 }
 
+.skill-icon-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
 .skill-category h3 {
     font-size: var(--font-size-base);
     margin-bottom: var(--spacing-sm);
@@ -771,30 +801,31 @@ strong {
 
 .soft-skills {
     background: var(--surface);
-    padding: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-xl);
     border-radius: 1rem;
     border: 1px solid var(--border);
 }
 
 .soft-skills h3 {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
     text-align: center;
 }
 
 .soft-skill-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--spacing-md);
+    grid-template-columns: repeat(5, 1fr);
+    gap: var(--spacing-sm);
 }
 
 .soft-skill-item {
-    padding: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
     background: white;
     border-radius: 0.5rem;
     border: 1px solid var(--border);
     text-align: center;
     font-weight: 500;
     color: var(--text-primary);
+    font-size: var(--font-size-sm);
 }
 
 /* ===========================

@@ -15,8 +15,8 @@
         <div class="container">
             <div class="nav-brand">Flora Lambert</div>
             <ul class="nav-menu">
-                <li><a href="#projets">Projets</a></li>
                 <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -28,7 +28,7 @@
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
+    <!-- HERO SECTION - RÉORGANISÉ -->
     <section class="hero">
         <div class="hero-banner">
             <div class="hero-geometry-line line-1"></div>
@@ -42,23 +42,110 @@
                         <h1 class="hero-title">Product Builder</h1>
                         <p class="hero-subtitle">No-Code + Low-Code & AI Automation Systems</p>
                         <div class="hero-divider"></div>
+                        <p class="hero-availability">Disponible immédiatement • 10 mois d'alternance</p>
+                        <p class="hero-description">Automatisation de vos process métier & IA</p>
+                        <div class="hero-buttons">
+                            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+                            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="hero-intro">
-            <div class="container">
-                <p class="hero-availability">Disponible immédiatement • 10 mois d'alternance</p>
-                <p class="hero-description">Automatisation de vos process métier & IA</p>
-                <div class="hero-buttons">
-                    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SECTION PROJETS -->
+    <!-- SECTION COMPÉTENCES - MOVED UP -->
+    <section id="competences" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Stack Technique</span>
+                <h2>Mes compétences opérationnelles</h2>
+            </div>
+            <div class="skills-grid">
+                <!-- Automation -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <img src="automation.png" alt="Automation" class="skill-icon-img">
+                    </div>
+                    <h3>Automation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-software">Make</span>
+                        <span class="skill-tag skill-software">n8n</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <img src="frontend.png" alt="Frontend" class="skill-icon-img">
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-software">Webflow</span>
+                        <span class="skill-tag skill-software">WeWeb</span>
+                        <span class="skill-tag skill-competence">Vibe Coding</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <img src="backend.png" alt="Backend" class="skill-icon-img">
+                    </div>
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-software">Bubble</span>
+                        <span class="skill-tag skill-software">Supabase</span>
+                        <span class="skill-tag skill-software">Xano</span>
+                        <span class="skill-tag skill-software">Airtable</span>
+                    </div>
+                </div>
+
+                <!-- AI -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <img src="ai.png" alt="AI" class="skill-icon-img">
+                    </div>
+                    <h3>AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-software">OpenAI</span>
+                        <span class="skill-tag skill-software">Claude</span>
+                        <span class="skill-tag skill-software">Perplexity</span>
+                        <span class="skill-tag skill-software">Gemini</span>
+                        <span class="skill-tag skill-competence">Prompt Engineering</span>
+                    </div>
+                </div>
+
+                <!-- Design -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <img src="design.png" alt="Design" class="skill-icon-img">
+                    </div>
+                    <h3>Design</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag skill-software">Figma</span>
+                        <span class="skill-tag skill-software">Photoshop</span>
+                        <span class="skill-tag skill-software">Illustrator</span>
+                        <span class="skill-tag skill-competence">UX Design</span>
+                        <span class="skill-tag skill-competence">Design Thinking</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soft-skills">
+                <h3>Soft Skills</h3>
+                <div class="soft-skill-list">
+                    <span class="soft-skill-item">Autonomie & collaboration</span>
+                    <span class="soft-skill-item">Résolution de problèmes complexes</span>
+                    <span class="soft-skill-item">Adaptabilité terrain</span>
+                    <span class="soft-skill-item">Gestion multi-projets</span>
+                    <span class="soft-skill-item">Rigueur opérationnelle</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION PROJETS - MOVED DOWN -->
     <section id="projets" class="projects">
         <div class="container">
             <div class="section-header">
@@ -157,7 +244,7 @@
         </div>
     </section>
 
-    <!-- MODALS -->
+    <!-- MODALS (garder tous les existants) -->
     <!-- Modal Countiko 1 -->
     <div id="modal-countiko-1" class="modal">
         <div class="modal-overlay" onclick="closeModal('countiko-1')"></div>
@@ -460,112 +547,26 @@
     <!-- Modal CV -->
     <div id="modal-cv" class="modal">
         <div class="modal-overlay" onclick="closeModal('cv')"></div>
-        <div class="modal-content">
+        <div class="modal-content modal-cv-large">
             <button class="modal-close" onclick="closeModal('cv')">✕</button>
             <div class="modal-body">
                 <h2>Mon CV</h2>
                 <div class="cv-container">
-                    <iframe src="CV_Flora_Lambert.pdf" type="application/pdf" width="100%" height="600px"></iframe>
+                    <img src="cv_preview.jpg" alt="CV Flora Lambert" style="width: 100%; height: auto; max-height: 600px; object-fit: contain;">
                 </div>
                 <div class="modal-cv-actions">
-                    <a href="CV_Flora_Lambert.pdf" download class="btn btn-primary">Télécharger le CV</a>
+                    <a href="cv_preview.jpg" download class="btn btn-primary">Télécharger le CV</a>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- SECTION COMPÉTENCES -->
-    <section id="competences" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Stack Technique</span>
-                <h2>Mes compétences opérationnelles</h2>
-            </div>
-            <div class="skills-grid">
-                <!-- Automation -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <img src="automation.png" alt="Automation" class="skill-icon-img">
-                    </div>
-                    <h3>Automation</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Make</span>
-                        <span class="skill-tag">n8n</span>
-                    </div>
-                </div>
-
-                <!-- Frontend -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <img src="frontend.png" alt="Frontend" class="skill-icon-img">
-                    </div>
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Webflow</span>
-                    </div>
-                </div>
-
-                <!-- Backend -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <img src="backend.png" alt="Backend" class="skill-icon-img">
-                    </div>
-                    <h3>Backend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Bubble</span>
-                        <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">Xano</span>
-                        <span class="skill-tag">Airtable</span>
-                    </div>
-                </div>
-
-                <!-- AI -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <img src="ai.png" alt="AI" class="skill-icon-img">
-                    </div>
-                    <h3>AI</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">OpenAI</span>
-                        <span class="skill-tag">Prompt Engineering</span>
-                    </div>
-                </div>
-
-                <!-- Design -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <img src="design.png" alt="Design" class="skill-icon-img">
-                    </div>
-                    <h3>Design</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Figma</span>
-                        <span class="skill-tag">UX Design</span>
-                        <span class="skill-tag">Design Thinking</span>
-                        <span class="skill-tag">Photoshop</span>
-                        <span class="skill-tag">Illustrator</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="soft-skills">
-                <h3>Soft Skills</h3>
-                <div class="soft-skill-list">
-                    <span class="soft-skill-item">Autonomie & collaboration</span>
-                    <span class="soft-skill-item">Résolution de problèmes complexes</span>
-                    <span class="soft-skill-item">Adaptabilité terrain</span>
-                    <span class="soft-skill-item">Gestion multi-projets</span>
-                    <span class="soft-skill-item">Rigueur opérationnelle</span>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- SECTION À PROPOS -->
     <section id="apropos" class="about">
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-left">
-                    <h2 class="about-title">Du design à l'automatisation : résoudre des problèmes à impact</h2>
+                    <h2 class="about-title">Du design à l'automatisation :<br>résoudre des problèmes à impact</h2>
                     <div class="about-image">
                         <img src="discu.jpg" alt="Discussion" class="profile-image">
                     </div>

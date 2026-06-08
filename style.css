@@ -256,7 +256,7 @@ strong {
     background: var(--background);
     position: relative;
     overflow: hidden;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
 .hero-banner {
@@ -394,30 +394,8 @@ strong {
 }
 
 .hero-icon-item svg {
-    display: none;
-}
-
-.hero-icon-img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-}
-
-.hero-icon-item::before {
-    content: '';
     display: block;
-    width: 48px;
-    height: 48px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
-
-.hero-icon-item:nth-child(1)::before { background-image: url('automation.png'); }
-.hero-icon-item:nth-child(2)::before { background-image: url('frontend.png'); }
-.hero-icon-item:nth-child(3)::before { background-image: url('backend.png'); }
-.hero-icon-item:nth-child(4)::before { background-image: url('ai.png'); }
-.hero-icon-item:nth-child(5)::before { background-image: url('design.png'); }
 
 .hero-intro {
     padding: var(--spacing-xl) 0 0;
@@ -635,9 +613,12 @@ strong {
 
 .modal-image {
     width: 100%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
     background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-images {
@@ -649,14 +630,15 @@ strong {
 }
 
 .modal-images .modal-image {
-    height: 250px;
+    height: 300px;
     gap: 0;
 }
 
 .modal-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    padding: var(--spacing-sm);
 }
 
 .modal-body {
@@ -717,11 +699,21 @@ strong {
     background: #f5f5f5;
     border-radius: 0.5rem;
     overflow: hidden;
+    max-height: 500px;
 }
 
 .cv-container iframe {
     display: block;
     border: none;
+    max-height: 500px;
+}
+
+.cv-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
 }
 
 .modal-cv-actions {
@@ -809,12 +801,15 @@ strong {
 .soft-skills h3 {
     margin-bottom: var(--spacing-md);
     text-align: center;
+    color: var(--primary);
 }
 
 .soft-skill-list {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-sm);
+    justify-content: center;
+    align-items: center;
 }
 
 .soft-skill-item {
@@ -851,7 +846,7 @@ strong {
 }
 
 .about-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-3xl);
     font-weight: 600;
     color: var(--primary);
     margin: 0;
